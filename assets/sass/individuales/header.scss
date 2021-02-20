@@ -1,0 +1,18 @@
+@import './colores.scss';
+header {
+	background: $light_brown;
+    nav {
+        height: 50px;
+        .navegacion {
+            display: flex;
+            justify-content: space-around;
+            li {
+                line-height: 50px;
+                list-style: none;
+                a {
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+}

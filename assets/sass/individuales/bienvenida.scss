@@ -1,0 +1,20 @@
+@import './colores.scss';
+.inicio {
+    p {
+        text-align: center;
+        color: $light_brown;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 100vh;
+        animation: abrir ease-in-out 1.5s;
+        a {
+            line-height: 100vh;
+            position: relative;
+            animation: mostrar ease-in-out 1.5s;
+        }
+    }
+}
+.cerrar {
+	animation: cerrar ease-in-out 1.5s;
+}
