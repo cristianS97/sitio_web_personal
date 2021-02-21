@@ -5,16 +5,17 @@
         color: $light_brown;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 50px;
-        line-height: 100vh;
+        line-height: 90vh;
         animation: abrir ease-in-out 1.5s;
         a {
             line-height: 100vh;
             position: relative;
             animation: mostrar ease-in-out 1.5s;
+            font-size: 120px;
         }
     }
 }
 .cerrar {
+    background: $light_brown;
 	animation: cerrar ease-in-out 1.5s;
 }

@@ -48,17 +48,18 @@ a:hover {
   color: #E0BB82;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 100vh;
+  line-height: 90vh;
   animation: abrir ease-in-out 1.5s;
 }
 .inicio p a {
   line-height: 100vh;
   position: relative;
   animation: mostrar ease-in-out 1.5s;
+  font-size: 120px;
 }
 
 .cerrar {
+  background: #E0BB82;
   animation: cerrar ease-in-out 1.5s;
 }
 
@@ -106,6 +107,47 @@ header nav .navegacion li {
 }
 header nav .navegacion li a {
   line-height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .inicio p a {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .inicio p a {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .inicio p a {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header nav .navegacion {
+    flex-direction: column;
+    display: none;
+    animation: display 1.5s ease-in-out;
+  }
+  header .menu-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 30px;
+    animation: my-blur 1.5s ease-in-out;
+  }
+  header .menu-btn:hover > span {
+    background: #A86CE0;
+  }
+  header .menu-btn span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 2.5px auto;
+    background: #724E94;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
