@@ -85,7 +85,7 @@ a:hover {
 }
 @keyframes mostrar {
   0% {
-    left: -1000px;
+    left: -1500px;
   }
   100% {
     left: 0;
@@ -124,7 +124,7 @@ header nav .navegacion li a {
     font-size: 50px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   header nav .navegacion {
     flex-direction: column;
     display: none;
