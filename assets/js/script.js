@@ -8,17 +8,29 @@ if(document.querySelector('#ingreso')) {
         document.querySelector('#ingreso').classList.add('dn');
     });
 }
+// Efectos de apertura y cierre menu en movil
 if(document.querySelector('.menu-btn')) {
     document.querySelector('.menu-btn').addEventListener('click', e => {
         if(document.querySelector('.navegacion').style.display == 'block') {
             document.querySelector('.navegacion').style.display = 'none';
-            document.querySelector('header').style.height = '50px';
-            document.querySelector('#x1').style.transform = '';
-            document.querySelector('#x2').style.transform = '';
-            document.querySelector('#x3').style.display = 'block';
+
+            let pos = 200;
+            let t =  setInterval(move, 1);
+
+            function move() {
+                if(pos <= 50) {
+                    document.querySelector('#x1').style.transform = 'rotate(0deg) translateY(0px) translateX(0px)';
+                    document.querySelector('#x2').style.transform = 'rotate(0deg)';
+                    document.querySelector('#x3').style.display = 'block';
+                    clearInterval(t);
+                } else {
+                    pos -= 1;
+                    document.querySelector('header').style.height = `${pos}px`;
+                }
+            }
         } else {
             let pos = 50;
-            let t =  setInterval(move, 10);
+            let t =  setInterval(move, 1);
 
             function move() {
                 if(pos >= 200) {
