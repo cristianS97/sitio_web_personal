@@ -16,6 +16,18 @@ body {
     background: url("../img/bg-textura.png");
     background-repeat: repeat;
 }
+@font-face {
+	font-family: 'nunito-black';
+	src: url('../fonts/Nunito-Black.ttf');
+}
+@font-face {
+	font-family: 'nunito-regular';
+	src: url('../fonts/Nunito-Regular.ttf');
+}
+@font-face {
+	font-family: 'nunito-extra-bold';
+	src: url('../fonts/Nunito-ExtraBold.ttf');
+}
 .alto {
 	height: 100vh;
 	background: $light_brown;
