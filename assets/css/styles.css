@@ -169,6 +169,29 @@ footer {
   height: 200px;
   background: #E0BB82;
 }
+footer .container {
+  height: 200px;
+  align-items: center;
+  display: flex;
+}
+footer .container .first {
+  width: 45%;
+}
+footer .container .first p {
+  font-size: 24px;
+  color: #724E94;
+  font-family: "nunito-extra-bold";
+}
+footer .container .second {
+  width: 45%;
+  display: flex;
+}
+footer .container .second .logo {
+  width: 100%;
+}
+footer .container .second .logo svg {
+  max-height: 100px;
+}
 
 @media only screen and (max-width: 768px) {
   .inicio p a {
@@ -286,6 +309,42 @@ footer {
   }
   main h1 {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  footer .container .first {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+  }
+  footer .container .second {
+    width: 100%;
+    height: 80px;
+    margin-bottom: -50px;
+  }
+  footer .container .second .logo svg {
+    max-height: 80px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  footer .container .first {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+  }
+  footer .container .first p {
+    font-size: 15px;
+  }
+  footer .container .second {
+    width: 100%;
+    height: 20px;
+  }
+  footer .container .second .logo svg {
+    max-height: 40px;
   }
 }
 
