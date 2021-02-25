@@ -1,0 +1,22 @@
+@media only screen and (max-width : 1024px) {
+    .restart {
+        .conocimientos {
+            .skills {
+                text-align: center;
+                .skill {
+                    height: auto;
+                    flex-direction: column;
+                    width: 100%;
+                    .name, .value {
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .percent {
+                        width: 100%;
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+}

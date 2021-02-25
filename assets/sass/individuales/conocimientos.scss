@@ -1,0 +1,58 @@
+@import './colores.scss';
+.restart {
+    margin-bottom: 0;
+    .conocimientos {
+        position: relative;
+        .skills {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            flex-wrap: wrap;
+            .skill {
+                width: 30%;
+                height: 150px;
+                padding: 20px;
+                margin-bottom: 50px;
+                position: relative;
+                display: flex;
+                .name {
+                    font-family: 'nunito-extra-bold';
+                    font-size: 24px;
+                    position: relative;
+                    width: 110px;
+                    text-align: center;
+                    color: $green;
+                    text-transform: uppercase;
+                    z-index: 1;
+                }
+                .value {
+                    position: relative;
+                    width: 40px;
+                    text-align: center;
+                    color: $green;
+                    text-transform: uppercase;
+                    z-index: 1;
+                    font-family: 'nunito-extra-bold';
+                    font-size: 24px;
+                }
+                .percent {
+                    width: calc(100% - 150px);
+                    height: 20px;
+                    margin: 0 10px;
+                    border-radius: 10px;
+                    background: #fff;
+                    .progress {
+                        margin-left: -5px;
+                        width: 95%;
+                        height: 100%;
+                        border-radius: 10px;
+                        background: #fff;
+                        animation: progress-bar 2s ease-in-out forwards;
+                        background: linear-gradient(45deg, $green, $light_brown);
+                    }
+                }
+            }
+        }
+    }
+}
