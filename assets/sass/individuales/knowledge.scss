@@ -1,0 +1,106 @@
+@import './colores.scss';
+
+.timeline {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: .2rem;
+        height: 100%;
+        background: #c5c5c5;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            line-height: normal;
+            position: relative;
+            width: 50%;
+            padding: 2rem 4rem;
+            list-style: none;
+            box-sizing: border-box;
+            clear: both;
+            &:nth-child(odd) {
+                float: left;
+                text-align: right;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    background: $purple;
+                    border-radius: 50%;
+                    top: 1.5rem;
+                    right: -.6rem;
+                    box-shadow: 0 0 0 3px rgba(168, 108, 224, .2);
+                }
+            }
+            &:nth-child(even) {
+                float: right;
+                text-align: left;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    background: $purple;
+                    border-radius: 50%;
+                    top: 1.5rem;
+                    left: -.4rem;
+                    box-shadow: 0 0 0 3px rgba(168, 108, 224, .2);
+                }
+            }
+        }
+    }
+    .content {
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-family: 'nunito-black';
+            text-transform: uppercase;
+        }
+        p {
+            margin: 10px 0 0;
+            padding: 0;
+            font-family: 'nunito-regular';
+        }
+    }
+    li {
+        .time {
+            h4 {
+                margin: 0;
+                padding: 0;
+                font-size: 1rem;
+            }
+        }
+        &:nth-child(odd) {
+            .time {
+                position: absolute;
+                top: 1.2rem;
+                right: -10.5rem;
+                margin: 0;
+                padding: .5rem .7rem;
+                background: rgba(168, 108, 224, 1);
+                color: $green;
+                text-transform: uppercase;
+                border-radius: 1.8rem;
+                box-shadow: 0 0 0 3px rgba(168, 108, 224, .2);
+            }
+        }
+        &:nth-child(even) {
+            .time {
+                position: absolute;
+                top: 1.2rem;
+                left: -10.5rem;
+                margin: 0;
+                padding: .5rem .7rem;
+                background: rgba(168, 108, 224, 1);
+                color: $green;
+                text-transform: uppercase;
+                border-radius: 1.8rem;
+                box-shadow: 0 0 0 3px rgba(168, 108, 224, .2);
+            }
+        }
+    }
+}
